@@ -1,0 +1,51 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "menuUI",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.85,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "startBtn": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.4,
+              "value": [
+                0,
+                -766.477,
+                0
+              ]
+            },
+            {
+              "frame": 0.85,
+              "value": [
+                0,
+                -529.13,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "title": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.15,
+              "value": 811.822
+            },
+            {
+              "frame": 0.6,
+              "value": 430.047
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
