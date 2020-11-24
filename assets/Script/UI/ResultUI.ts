@@ -5,6 +5,8 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
+import { Constants } from "../Config/Constants";
+import { SendMsg } from "../Net/SendMsg";
 import { UIManager, UIType } from "../UIManager";
 import PopBaseUI from "./PopBaseUI";
 
@@ -12,6 +14,10 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class ResultUI extends PopBaseUI {
+    init() {
+        SendMsg.reqSaveAssessStatistics(Constants.AssessStatisticsJson);
+    }
+
     clickBackGame() {
         UIManager.instance.hideAll();
         UIManager.instance.showUI(UIType.MenuUI);
